@@ -32,12 +32,6 @@ let prixDev = 500000;
 elements.displayScore.innerHTML = score;
 elements.displayIncrement.innerHTML =  increment;
 
-//pop up de dante
-/*let htmlcli = document.getElementById("HTML").addEventListener('click', true)
-if ( htmlcli =  true && prixHtml ==5 ){
-    
-}*/
-
 // On affiche les prix à l'emplacement correct
 let displayPrixHtml = document.getElementById("HTML");
 displayPrixHtml.innerHTML= displayPrixHtml.value+ " " + prixHtml;
@@ -82,13 +76,7 @@ displayPrixDev.innerHTML = displayPrixDev.value + " " + prixDev;
 function incrementScore()
 {   
     score = score + increment;
-// Afficher les achievements
 
-/*    if( score >= prixHtml){
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-  }*/   
-  
     //modification opacité des boutons 
     if (score >= prixHtml){
         document.getElementById("HTML").style.backgroundColor = "#0bda51";
@@ -154,8 +142,6 @@ function incrementer() {
     increment = increment + incrementLangage; 
     score = score - prix;
     prix = prix + augmentation;
-    //document.getElementById(langage).style.backgroundColor = couleur;
-    //document.getElementById(langage).style.opacity = "0.5";
     }}
 
 let DanteSays = document.querySelector('.dante');
@@ -224,20 +210,10 @@ function upgradeRuby() {
     return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment, displayPrixRuby.innerHTML = "Ruby" + " " + prixRuby;
     }  
 
-    /*TEST ECHOUE, LE PRIXTOCALCULATE SE MELANGE AVEC TOUS LES LANGAGES
-    function incrementer(prixToCalculate, langage, couleur, augmentation, incrementLangage) { 
-    if(score >= prixToCalculate && timeOver == 0){
-    increment = increment + incrementLangage; 
-    score = score - prixToCalculate;
-    prixToCalculate = prixToCalculate + augmentation;
-    document.getElementById(langage).style.backgroundColor = couleur;
-    document.getElementById(langage).style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML = increment, displayPrixHtml.innerHTML = "HTML/CSS" + " " + prixToCalculate;}
-}*/
-
 // variables de durée pour touche café
-var refreshTime = 60;
+var refreshTime = 5;
 var timeOver = 0;
+var actif = 0;
 
 // Le temps de refresh pour le bouton Café
 function timeRefreshCafe(){
@@ -251,29 +227,33 @@ const intervalRefresh = setInterval(timeRefreshCafe, 1000);
 
 // Fonction qui contrôle le bouton café
 function boostCafe() {
-    if (refreshTime == 0){
-    timeOver = 30;
+    if (refreshTime == 0 || timeOver > 0){
+        if (refreshTime == 0 && timeOver == 0){
+            timeOver = 30;}
     function timeActiveCafe(){
         if (timeOver > 0){
         timeOver--;
+        return document.getElementById("boostCafe").innerHTML ="boost " + timeOver;
         }
         else if (timeOver == 0){
         clearInterval(intervalOver);
         increment = increment / 2;
-        refreshTime = 5;
+        actif--
         timeRefreshCafe();
-        return elements.displayIncrement.innerHTML =  increment
+        return elements.displayIncrement.innerHTML =  increment;
         }
     console.log(timeOver);
     }
     const intervalOver = setInterval(timeActiveCafe, 1000);
-    if(refreshTime == 0 && timeOver > 0){
+    if(refreshTime == 0 && timeOver > 0 && actif == 0){
     increment = increment * 2; 
+    refreshTime = 5;
+    actif++;
     return elements.displayScore.innerHTML = score, elements.displayIncrement.innerHTML =  increment;
     }
     }
     else{
-        alert("Patience");
+       return document.getElementById("boostCafe").innerHTML ="boost " + refreshTime;
     }
 }
 
@@ -295,7 +275,7 @@ var incrementAutoDev = 1;
 
 function autoFront() {
     if (intervalAutoFront == 0 && score >= prixFront){
-    score = score + incrementAutoFront;
+    score = score - prixFront;
     intervalAutoFront++;
     const intervalEntree = setInterval(autoFront, 1000);
     return elements.displayScore.innerHTML = score, displayPrixFront.innerHTML = "You hired a Frontend";
@@ -307,7 +287,7 @@ function autoFront() {
 }
 function autoBack() {
  if (intervalAutoBack == 0 && score >= prixBack){
-    score = score + incrementAutoBack;
+    score = score - prixBack;
     intervalAutoBack++;
     const intervalEntree = setInterval(autoBack, 1000);
     return elements.displayScore.innerHTML = score, displayPrixBack.innerHTML = "You hired a Backend";
@@ -319,7 +299,7 @@ function autoBack() {
 }
 function autoFull() {
  if (intervalAutoFull == 0 && score >= prixFull){
-    score = score + incrementAutoFull;
+    score = score - prixFull;
     intervalAutoFull++;
     const intervalEntree = setInterval(autoFull, 1000);
     return elements.displayScore.innerHTML = score, displayPrixFull.innerHTML = "You hired a FullStack";
@@ -331,7 +311,7 @@ function autoFull() {
 }
 function autoSenior() {
     if (intervalAutoSenior == 0 && score >= prixSenior){
-    score = score + incrementAutoSenior;
+    score = score - prixSenior;
     intervalAutoSenior++;
     const intervalEntree = setInterval(autoSenior, 1000);
     return elements.displayScore.innerHTML = score, displayPrixSenior.innerHTML = "You hired a Senior Dev";
@@ -343,7 +323,7 @@ function autoSenior() {
 }
 function autoDev() {
     if (intervalAutoDev == 0 && score >= prixDev){
-        score = score + incrementAutoDev;
+        score = score - prixDev;
         intervalAutoDev++;
         const intervalEntree = setInterval(autoDev, 1000);
         return elements.displayScore.innerHTML = score, displayPrixDev.innerHTML = "You hired a Dev Manager";
@@ -363,15 +343,6 @@ let prixMultiJava = 1;
 let prixMultiKotlin = 1;
 let prixMultiPython = 1;
 let prixMultiRuby = 1;
-
-/*function multipliers(prixMulti, incrementAuto, augmentation, langage) {
-    if(score >= prixMulti){
-    incrementAuto = incrementAuto * 2; 
-    score = score - prixMulti;
-    prixMulti = prixMulti + augmentation;
-    document.getElementById(langage).style.opacity = "0.5";
-    return elements.displayScore.innerHTML = score;
-    }}*/
 
 function multiHtml() {
     if(score >= prixMultiHtml){
@@ -514,9 +485,3 @@ iconeJava.addEventListener("mouseover", function() {
       tutoRuby.classList.toggle("show");
     }, 3500);
   }, false);
-
-/*iconeHtml.onmouseover = function survol()
-   {
-    var tutoHtml = document.getElementById("tutoHtml");
-    tutoHtml.classList.toggle("show");
-}*/
