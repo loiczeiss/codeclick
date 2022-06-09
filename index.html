@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coder Clicker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="buttonglitch.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id='canv'></canvas>
+    <div class="parent">
+        <div class="div1">
+            <button type="button" class="query" value="HTML/CSS" id="HTML" onclick="upgradeHtml()"> HTML/CSS </button>
+             </div>
+        <div class="div2">
+            <button type="button" class="query" id="JavaScript" value="JavaScript" onclick="upgradeJs()">JavaScript</button>
+        </div>
+        <div class="div3">
+        <button type="button" class="query" id="PHP" value="PHP" onclick="upgradePhp()"> PHP</button>
+        </div>
+        <div class="div4"> 
+           <button type="button" class="query" id="C" value="C+" onclick="upgradeC()">C++</button>
+        </div>
+        <div class="div5">
+           <button type="button" class="query" value="Java" id="Java" onclick="upgradeJava()">Java</button>
+         </div>
+        <div class="div6">
+           <button type="button" class="query" value="Kotlin" id="Kotlin" onclick="upgradeKotlin()">Kotlin</button>
+         </div>
+        <div class="div7">
+        <button type="button" class="query" value="Python" id="Python" onclick="upgradePython()">Python</button>
+         </div>
+        <div class="div8"> 
+           <button type="button"  class="query" value="Ruby" id="Ruby" onclick="upgradeRuby()">Ruby</button>
+        </div>
+        <!--<div class="div9">²
+            <input type="button" value="Swift" id="Swift" onclick="upgradeSwift()">
+             </div>-->
+       <div class="div10"> 
+            <p class="multi" style="text-align: center;" >Learn these languages</p>
+        </div>
+        <div class="div11">
+            <h1 id="title">Code Clicker</h1>
+        </div>  
+        <div class="div12"> 
+            
+        </div>
+        <div class="div13"> <br />
+        <button value="FrontEnd" onclick="autoFront()" id="FrontEnd" data-inc="1">Front-end</button>
+        </div>
+        <div class="div14"> 
+           <button  value="BackEnd" onclick="autoBack()" id="BackEnd" data-inc="10"> BackEnd</button>
+        </div>
+        <div class="div15"> 
+            <button value="FullStack" onclick="autoFull()" id="FullStack">FullStack</button>
+        </div>
+        <div class="div16"> 
+           <button value="Senior" onclick="autoSenior()" id="Senior">Senior Dev</button>
+        </div>
+        <div class="div17"> 
+           <button value="devMan" onclick="autoDev()" id="devMan">Dev Manager </button>
+        </div>
+        <div class="div18"> 
+            <main class="itemBox">
+                <div class="popup" ><button  id="iconHTml"  style="background: url('png/codage.png'); background-size:cover" onclick="multiHtml()">
+                    <span class="popuptext" id="tutoHtml" value="tutoHtml">Allows the front-end staff to express their creativity ya'know.</span> </button></div>
+                <div class="popup" ><button id="iconJS" style="background: url('png/js.png'); background-size: cover" onclick="multiJs()">
+                    <span class="popuptext" id="tutoJs" value="tutoJs">Makes you loose the will to live times two.</span></button></div>
+                <div class="popup" ><button id="iconPHP" style="background: url('png/php.png'); background-size: cover" onclick="multiPHP()">
+                    <span class="popuptext" id="tutoPHP" value="tutoPHP">Whip those anonymous back-end slaves to make them work faster.</span></button></div>
+            
+        </div>
+        <div class="barIcon2">
+            <div class="popup" ><button id="iconC"  style="background: url('png/c-.png'); background-size: cover" onclick="multiC()">
+                <span class="popuptext" id="tutoC" value="tutoC">C+ gets even more powerfull.</span></button></div>
+            <div class="popup" ><button id="iconJava" style="background: url('png/java.png'); background-size: cover;" onclick="multiJava()">
+                <span class="popuptext" id="tutoJava" value="tutoJava">You get double the.</span></button></div>
+            <div class="popup" ><button id="iconKotlin" style="background: url('png/kotlin.png'); background-size: cover;" onclick="multiKotlin()">
+                <span class="popuptext" id="tutoKotlin" value="tutoKotlin">You try to guess the purpose of this language twice as hard.</span></button></div>
+                
+        </div>
+        <div class="baricon3">
+            <div class="popup" ><button id="iconPython" style="background: url('png/python.png'); background-size: cover;" onclick="multiPython()">
+                <span class="popuptext" id="tutoPython" value="tutoPython">You can now code life itself into existence.</span></button></div>
+            <div class="popup" ><button id="iconRuby" style="background: url('png/ruby.png'); background-size: cover; " onclick="multiRuby()">
+                <span class="popuptext" id="tutoRuby" value="tutoRuby">Double le rendement du Dev Manager.</span></button></div>
+        </div>
+        <div class="espace">
+            <p class="littleH" >Build Your Team</p>
+        </div>
+    </main>
+
+        <div class="div19"> 
+            <img class="dante" src="png/dantebl.png" alt="el famoso dante">
+                <span class="popuptext" id="danteSay" value="danteSay">- I swear if I see one more 'Hello World!'...</span></img>
+                
+            <!--
+            <figure>
+                <img src="https://www.tomsguide.fr/content/uploads/sites/2/2020/08/morpheus-matrix.jpg" id="morpheus"/>
+              </figure>-->
+            <!-- <div class="popup" > Achievement <br>
+                <span class="popuptext" id="myPopup" value="myPopup">You are now able to do the bare minimum</span>
+              </div>         -->
+        </div>
+        <div class="div20">
+            <p class="lineC"> Lines of code</p>
+             <a type="number" id="score"></a>
+        </div>
+        <div class="clickValeur">
+            <p class="multipliX"> Multiplier x</p>
+            <a type="number" id="clickVal"></a>
+        </div>
+        <div class="div22">
+            <button value="boostCafe" id="boostCafe" onclick="boostCafe()">BOOST</button>
+        </div>
+        <div class="div21">
+            <button value="Entree" id="entree" style="background: url('png/enter.png') ; size: 4em; background-size: cover; ;border: white; filter: invert(80%) sepia(30%) saturate(5984%) hue-rotate(82deg) brightness(100%) contrast(122%);; " onclick="incrementScore()"></button>
+        </div>
+ 
+    </div>
+   
+            
+  
+<script src="script.js"></script>
+<script src="scriptlow.js"></script>
+     
+</body>
+</html>

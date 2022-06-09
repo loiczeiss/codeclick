@@ -1,0 +1,567 @@
+#boostCafe{
+    width: 50%;
+    height: 50%;
+    
+}
+
+
+#entree{ 
+  width: 13em;
+  height: 13em;
+    border-radius: 8px;
+ cursor: pointer;
+    outline: none;
+    color: rgb(20, 1, 1);
+    background-color: #EBBF00;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #999;
+}
+
+#entree:hover {background-color: #EBBF00}
+
+#entree:active {
+background-color: #EBBF00;
+box-shadow: 0 5px #666;
+transform: translateY(4px)}
+
+
+
+
+/*#HTML{
+    width: 75%;
+    height: 75%;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(20, 1, 1);
+    background-color: grey;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#HTML:hover {background-color: #0bda51}
+
+#HTML:active {
+background-color: #0bda51;
+box-shadow: 0 5px #666;
+transform: translateY(4px)}*/
+
+
+
+
+
+
+/*#JavaScript{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+    outline: none;
+    color: rgb(20, 1, 1);
+    background-color: grey;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#JavaScript:hover {background-color: #0bda51}
+
+#JavaScript:active {
+background-color: #0bda51;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}*/
+
+
+
+
+
+
+
+/*#PHP{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#PHP:hover {background-color: #0bda51}
+
+#PHP:active {
+background-color: #0bda51;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}*/
+
+
+/*#C{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#C:hover {background-color: #0bda51}
+
+#C:active {
+background-color: #0bda51;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}
+
+
+#Java{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#Java:hover {background-color: #009000}
+
+#Java:active {
+background-color: #009000;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}
+
+
+#Kotlin{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#Kotlin:hover {background-color: #009000}
+
+#Kotlin:active {
+background-color: #009000;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}
+
+
+
+#Python{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#Python:hover {background-color: #009000}
+
+#Python:active {
+background-color: #009000;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}
+
+
+#Ruby{
+width: 75%;
+height: 75%;
+border-radius: 8px;
+cursor: pointer;
+outline: none;
+color: rgb(20, 1, 1);
+background-color: grey;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+}
+
+#Ruby:hover {background-color: #009000}
+
+#Ruby:active {
+background-color: #009000;
+box-shadow: 0 5px #666;
+transform: translateY(4px)
+}
+*/
+/*#FrontEnd {
+    width:75%;
+    height:75%;
+    border-radius: 8px;
+
+}
+
+#BackEnd{
+    width:75%;
+    height:75%;
+    border-radius: 8px;
+
+}
+
+#FullStack{
+    width:75%;
+    height:75%;
+    border-radius: 8px;
+
+}
+
+#Senior{
+    width:75%;
+    height:75%;
+    border-radius: 8px;
+
+}
+
+#devMan{
+    width:75%;
+    height:75%;
+    border-radius: 8px;
+
+}*/
+
+#iconHTml{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconHTml {
+          width: 3.5em;
+          height: 3.5em;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconHTml:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconHTml:focus {
+          outline: none;
+      }
+
+    
+
+
+
+
+#iconJS{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.2em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconJS {
+          
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconJS:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconJS:focus {
+          outline: none;
+      }
+
+
+#iconPHP{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconPHP {
+         
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconPHP:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconPHP:focus {
+          outline: none;
+      }
+
+
+#iconC{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+                -webkit-touch-callout: none;
+                  -webkit-user-select: none;
+                   -khtml-user-select: none;
+                     -moz-user-select: none;
+                      -ms-user-select: none;
+                          user-select: none;
+                      -webkit-tap-highlight-color: transparent;
+              }
+              
+              #iconC {
+
+                  cursor: pointer;
+                  font-size: 20px;
+                  font-weight: bold;
+                  color: black;
+                  background: white;
+                  border: 2px solid black;
+                  box-shadow: 5px 5px 0 green,
+                      -5px -5px 0 green,
+                      -5px 5px 0 green,
+                      5px -5px 0 green;
+                  transition: 500ms ease-in-out;
+              }
+              
+              #iconC:hover {
+                  box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+              }
+              
+              #iconC:focus {
+                  outline: none;
+              }
+      
+      
+   
+
+#iconJava{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconJava {
+          
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconJava:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconJava:focus {
+          outline: none;
+      }
+
+
+#iconKotlin{
+   
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconKotlin {
+       
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconKotlin:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconKotlin:focus {
+          outline: none;
+      }
+ 
+
+#iconPython{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconPython {
+  
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconPython:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconPython:focus {
+          outline: none;
+      }
+
+
+#iconRuby{
+    width: 3.5em;
+    height: 3.5em;
+    margin: 0.5em;
+    border-radius: 12px;
+        -webkit-touch-callout: none;
+          -webkit-user-select: none;
+           -khtml-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+              -webkit-tap-highlight-color: transparent;
+      }
+      
+      #iconRuby {
+        
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: black;
+          background: white;
+          border: 2px solid black;
+          box-shadow: 5px 5px 0 green,
+              -5px -5px 0 green,
+              -5px 5px 0 green,
+              5px -5px 0 green;
+          transition: 500ms ease-in-out;
+      }
+      
+      #iconRuby:hover {
+          box-shadow: 20px 5px 0 green, -20px -5px 0 green;
+      }
+      
+      #iconRuby:focus {
+          outline: none;
+      }
